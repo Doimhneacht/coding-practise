@@ -16,7 +16,6 @@ class String
   end
 end
 
-
 print "You are about to calculate the distance between two points in 2-D space.
 Insert the coordinates of the points, divided by semicolon and space like here: 'x; y'
 First point: "
@@ -43,8 +42,7 @@ def distance(a, b)
   x1, y1, x2, y2 = a[0].to_i, a[1].to_i, b[0].to_i, b[1].to_i
   ac = y1 - y2
   bc = x2 - x1
-  d = Math.sqrt(ac*ac + bc*bc)
-  puts "The distance between the given points is #{d}"
+  Math.sqrt(ac*ac + bc*bc)
 end
 
-distance(a, b)
+puts "The distance between the given points is #{distance(a, b)}"

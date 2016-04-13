@@ -14,5 +14,10 @@ def factorial(n)
   puts "Factorial of #{n} is #{f}"
 end
 
-factorial(n)
-
+def fac(n)
+  if n == 0
+    1
+  else
+    n * fac(n-1)
+  end
+end
